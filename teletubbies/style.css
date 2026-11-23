@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(243, 204, 223);
+}
+header{
+    background-color: rgb(248, 156, 202);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+h1{
+    color: rgb(197, 47, 122);
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 50px;
+    background-image: url(image/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 50px;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+header a{
+    color: rgb(172, 29, 100);
+    text-decoration: none;
+}
+header a:hover{
+    color: rgb(0, 255, 136);
+    text-decoration: underline;
+}
+.news{
+    background-color: rgb(243, 204, 223);
+    color: rgb(0, 0, 0);
+    height: 95vh;
+    background-image:url(image/背景.PNG) ;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.news h2{
+    font-size: 60px;
+    margin-top: 60px;
+}
+.news p{
+    color: black;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.news a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid rgb(243, 149, 149);
+    padding: 10px 20px;
+    border-radius: 5pt;
+}
+.slogan{
+    background-color: rgb(243, 204, 223);
+    color: rgb(0, 0, 0);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+.shop{
+    display: flex;
+}
+.shop img{
+    width: 50%;
+}
+.info{
+    width: 50%;
+    background-color: rgb(243, 204, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info h2{
+    font-size: 40px;
+    margin-bottom: 30;
+}
+.info p{
+    text-align: 40px;
+    line-height: 2em;
+}
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 204, 223);
+    align-items: center;
+    padding: 100px 180px 80px ;
+}
+.newsletter div{
+    width: 300px;
+    text-align: center;
+}
+.newsletter img{
+    width: 100%;
+    border-radius: 10px;
+}
+.newsletter h2{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.newsletter p{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(216, 128, 150);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.menu{
+    display: none;
+}
+/*響應試網頁語法*/
+@media screen and (max-width: 768px){
+    header ul{
+        display: none;
+    }
+
+    header h1{
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .news h2{
+        font-size: 40px;
+    } 
+    .menu{
+        display: block;
+        background-color: aliceblue;
+        color: rgb(238, 158, 201);
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        border: none;
+        cursor: pointer;
+    }
+    .shop{
+        flex-direction: column;
+    }
+    .shop img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .info h2{
+        font-size: 30px;
+    }
+    .newsletter{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .newsletter div{
+        margin-bottom: 30px;
+    }
+}
